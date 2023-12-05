@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+    background-color: var(--headerblue);
+    width: 100%;
+    padding: 35px;
+}
+
+.mobile-header-link {
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.mobile-header-link:visited {
+    color: var(--cta);
+}

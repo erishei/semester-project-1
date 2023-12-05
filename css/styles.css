@@ -1,0 +1,162 @@
+:root {
+    --light: #F0F2E7;
+    --headerblue: #041938;
+    --foldertag: #100D3E;
+    --almostblack: #151515;
+    --stroke: #25105F;
+    --card: rgba(151, 71, 255, 25%);
+    --cta: #FB8F1F;
+    --linkpink: #E8345B;
+    --blur: rgba(4, 25, 56, 75%);
+    --bodybackground: linear-gradient(rgba(4, 25, 56, 100%), rgba(151, 71, 255, 100%));
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background: var(--bodybackground);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-banner {
+    background-image: url("../assets/mobile-images/mobile-header-img.webp");
+    background-repeat: no-repeat;
+    height: 328px;
+    width: 430px;
+    padding-top: 192px;
+}
+
+.hero-a {
+    height: 72px;
+    width: 330px;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: var(--blur);
+    color: var(--light);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+main {
+    margin: 35px;
+}
+
+.carousel {
+    height: 392px;
+    width: 360px;
+    margin-bottom: 1rem;
+}
+
+.carousel-headline {
+    height: 2rem;
+    width: 360px;
+    background-color: var(--foldertag);
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-headline h2 {
+    color: var(--light);
+    font-size: 1rem;
+}
+
+.carousel-main {
+    width: 100%;
+    height: 360px;
+    border: 1px solid var(--stroke);
+    background-color: var(--card);
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-carousel-img {
+    background-image: url("../assets/mobile-images/events-example-img.webp");
+    background-repeat: no-repeat;
+    height: 344px;
+    width: 328px;
+    margin: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.carousel-a {
+    background-color: var(--blur);
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.carousel-a a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.exhibit-carousel-img {
+    background-image: url("../assets/mobile-images/exhibitions-example-img.webp");
+    background-repeat: no-repeat;
+    height: 344px;
+    width: 328px;
+    margin: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-banner {
+    height: 360px;
+    width: 360px;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-banner a {
+    color: var(--light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.about {
+    background-image: url("../assets/mobile-images/about-us.webp");
+}
+
+.contact {
+    background-image: url("../assets/mobile-images/contact-support-img.webp");
+}
+
+.article-1 {
+    background-image: url("../assets/mobile-images/mammoth-artice-mobile.webp");
+}
+
+.article-2 {
+    background-image: url("../assets/mobile-images/fossils-article-mobile.webp");
+}
