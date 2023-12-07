@@ -1,0 +1,67 @@
+h1 {
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.mobile-info-header {
+    height: 360px;
+    width: 360px;
+    background-image: url("../assets/mobile-images/practical-info-img-mobile.webp");
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-box {
+    height: 392px;
+}
+
+.info-box-headline {
+    height: 2rem;
+    background-color: var(--foldertag);
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.info-box-headline h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.info-box-outer {
+    height: 360px;
+    width: 360px;
+    background-color: var(--card);
+    border: 1px solid var(--stroke);
+    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box-inner {
+    height: 344px;
+    width: 344px;
+    background-color: var(--light);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+
+
