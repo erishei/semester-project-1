@@ -1,0 +1,65 @@
+h1 {
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.mobile-info-header {
+    height: 360px;
+    width: 360px;
+    background-image: url("../assets/mobile-images/mobile-booking-header.webp");
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form {
+    background-color: var(--card);
+    border: 1px solid var(--stroke);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-form-main label {
+    width: 360px;
+    height: 2rem;
+    background-color: var(--foldertag);
+    color: var(--light);
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form-main input {
+    width: 360px;
+    height: 4rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border: none;
+    padding: 1rem;
+}
+
+#boo
+
+hr {
+    width: 80%;
+    color: var(--stroke);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
