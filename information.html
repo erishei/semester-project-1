@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/info-boxes.css">
     <link rel="stylesheet" type="text/css" href="css/information.css">
     <title>Practical Info</title>
 </head>
@@ -108,17 +109,18 @@
                 </h2>
             </div>
             <div class="info-box-outer">
-                <div class="info-box-inner">
-                    <h3>
-                        Test
-                    </h3>
-                    <p>
-                        test test test
-                    </p>
+                <div class="info-box-inner hours-list-box">
+                    <div class="hours-list monday"><span class="day">Monday</span><span class="hours">10.00-19.00</span></div>
+                    <div class="hours-list tuesday"><span class="day">Tuesday</span><span class="hours">10.00-19.00</span></div>
+                    <div class="hours-list wednesday"><span class="day">Wednesday</span><span class="hours">10.00-19.00</span></div>
+                    <div class="hours-list thursday"><span class="day">Thursday</span><span class="hours">10.00-20.00</span></div>
+                    <div class="hours-list friday"><span class="day">Friday</span><span class="hours">10.00-19.00</span></div>
+                    <div class="hours-list saturday"><span class="day">Saturday</span><span class="hours">10.00-17.00</span></div>
+                    <div class="hours-list sunday"><span class="day">Sunday</span><span class="hours">10.00-16.00</span></div>
                 </div>
             </div>
         </div>
-        <div class="info-box location">
+        <div class="info-box">
             <div class="info-box-headline">
                 <img src="assets/mobile-svgs/location-icon.svg"/>
                 <h2>
@@ -126,13 +128,17 @@
                 </h2>
             </div>
             <div class="info-box-outer">
-                <div class="info-box-inner">
-                    <h3>
-                        Test
-                    </h3>
-                    <p>
-                        test test test
-                    </p>
+                <div class="info-box-inner location">
+                    <div class="location-text">
+                        <h3>
+                            Address:
+                        </h3>
+                        <span>1 Milkyway Road</span>
+                        <span>0367 Oslo</span>
+                        <span>Norway</span>
+                    </div>
+                    <img src="assets/mobile-images/mobile-map.png" class="mobile-map"/>
+                    <img src="assets/desktop-images/desktop-map.png" class="desktop-map"/>
                 </div>
             </div>
         </div>
@@ -270,7 +276,7 @@
     <h3 class="sign-up-headline">
         Sign up for news and early access!
     </h3>
-    <form>
+    <form class="sign-up-form">
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="E-mail address:" required>
         <button type="submit" class="submit-btn">

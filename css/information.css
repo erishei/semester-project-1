@@ -1,3 +1,13 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 35px;
+}
+
 h1 {
     color: var(--light);
     font-size: 1.5rem;
@@ -12,62 +22,47 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
 }
 
-.info-boxes {
+.hours-list-box {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.info-box {
-    height: 100%;
-}
-
-.info-box-headline {
-    height: 2rem;
-    background-color: var(--foldertag);
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
+.hours-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+    justify-content: space-between;
 }
 
-.info-box-headline h2 {
-    font-size: 1rem;
+.day {
     font-weight: 700;
-    color: var(--light);
+    font-size: 1rem;
 }
 
-.info-box-outer {
-    height: 100%;
-    width: 360px;
-    padding: .5rem;
-    background-color: var(--card);
-    border: 1px solid var(--stroke);
-    box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.25);
+.location span {
+    display: block;
+}
+
+.location {
+    padding: 0;
+}
+
+.location-text {
+    margin: 1rem;
+}
+
+.location h3 {
+    padding-bottom: 1rem;
+}
+
+.mobile-map {
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.info-box-inner {
-    height: 100%;
-    width: 344px;
-    background-color: var(--light);
-    border-radius: .5rem;
-    padding: 1rem;
-}
-
-.info-ul {
-    line-height: 2rem;
-    font-size: 1rem;
-    color: var(--almostblack);
+.desktop-map {
+    display: none;
 }
 
 .pink-button {
@@ -95,6 +90,42 @@ h1 {
 
 .pink-button-a:hover {
     color: var(--cta);
+}
+
+
+@media (min-width: 768px) {
+    .location {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile-map {
+        display: none;
+    }
+
+    .desktop-map {
+        display: block;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 4rem;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    main {
+        max-width: 1440px;
+    }
 }
 
 

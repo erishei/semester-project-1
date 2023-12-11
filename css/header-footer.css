@@ -93,7 +93,7 @@ nav {
     background-color: var(--headerblue);
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,7 @@ nav {
     color: var(--light);
 }
 
-form {
+.sign-up-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +121,6 @@ form {
     border: none;
     border-radius: .5rem;
     padding-left: 1.5rem;
-    /*margin-bottom: 1rem;*/
     font-size: 1rem;
     font-weight: 700;
 
@@ -145,10 +144,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: var(--headerblue);
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 35px;
 }
 
 .footer-logos {
@@ -195,7 +191,7 @@ footer {
 }
 
 @media (min-width: 608px) {
-    form {
+    .sign-up-form {
        flex-direction: row;
     }
 }

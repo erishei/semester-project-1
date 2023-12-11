@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="css/info-boxes.css">
     <link rel="stylesheet" type="text/css" href="css/booking.css">
     <title>Booking/Tickets</title>
 </head>
 <body>
->
+
+<header>
 <nav>
     <div class="logo">
         <a href="index.html">
@@ -93,52 +95,101 @@
 </nav>
 </header>
 
+<section class="mobile-info-header">
+    <h1>
+        Book your tickets here!
+    </h1>
+</section>
+
 <main>
-    <section class="mobile-info-header">
-        <h1>
-            Book your tickets here!
-        </h1>
-    </section>
-    <section class="booking-form">
-        <form class="booking-form-main">
-            <label for="date-time">
-                Date and time:
-            </label>
-            <input type="date" id="date-time" name="date-time">
-            <label>
-                Number of tickets:
-            </label>
-            <input type="number" id="booking-nr-tickets" name="booking-nr">
-            <label for="booking-name">
-                Name:
-            </label>
-            <input type="text" id="booking-name" name="booking-name" placeholder="Your full name here:">
-            <label for="booking-email">
-                E-mail:
-            </label>
-            <input type="email" id="booking-email" name="booking-email" placeholder="Your e-mail address here:">
-<!--        </form>-->
-<!--        <form id="delivery-radio">-->
-            <h3>
-                Where would you like your tickets?
-            </h3>
-            <label for="booking-radio-email">E-mail:</label>
-            <input type="radio" name="booking-radio" value="email-ticket" id="booking-radio-email">
-            <label for="booking-radio-text">Text Message:</label>
-            <input type="radio" name="booking-radio" value="text-message" id="booking-radio-text"/>
-            <label for="booking-radio-both">Email and Text Message:</label>
-            <input type="radio" name="booking-radio" value="text-and-email" id="booking-radio-both"/>
-            <hr/>
-            <label>I have read and agree to the <span><a>terms and conditions</a></span>.</label>
-            <input type="checkbox" name="terms" value="terms-and-conditions" id="terms" required>
-        </form>
-    </section>
+    <div class="desktop-main-part">
+        <section class="info-boxes">
+            <div class="info-box ticket-pricing-info">
+                <div class="info-box-headline">
+                    <h2>
+                        Ticket pricing:
+                    </h2>
+                </div>
+                <div class="info-box-outer ticket-pricing-outer">
+                    <div class="info-box-inner">
+                        <div class="pricing-bars"><span class="price-title">Standard admission:</span><span class="price-text">100kr</span></div>
+                        <div class="pricing-bars"><span class="price-title">Students:</span><span class="price-text">50kr</span></div>
+                        <p class="ticket-pickup">Children up to 18 years and anyone over 65 can enjoy free entry.</p>
+                    </div>
+                    <div class="info-box-inner">
+                        <div class="tickets-text">
+                            <h3>
+                                Schools and other groups:
+                            </h3>
+                            <p>
+                                Please use our <a href="contact.html">contact form</a> for booking for school
+                                classes and other large groups.
+                            </p>
+                            <p>
+                                Schools are admitted free of charge, including
+                                educators who are accompanying the students.
+                            </p>
+                            <p class="ticket-pickup">Children up to 18 years and anyone over 65 can enjoy free entry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="desktop-main-part-2">
+        <section class="booking-form">
+            <form class="booking-form-main">
+                <label for="date-time" class="main-booking-label">
+                    Date and time:
+                </label>
+                <input class="booking-main-input" type="date" id="date-time" name="date-time">
+                <label class="main-booking-label" for="booking-nr-tickets">
+                    Number of tickets:
+                </label>
+                <input class="booking-main-input" type="number" id="booking-nr-tickets" name="booking-nr">
+                <label for="booking-name" class="main-booking-label">
+                    Name:
+                </label>
+                <input class="booking-main-input" type="text" id="booking-name" name="booking-name" placeholder="Your full name here:">
+                <label for="booking-email" class="main-booking-label">
+                    E-mail:
+                </label>
+                <input class="booking-main-input" type="email" id="booking-email" name="booking-email" placeholder="Your e-mail address here:">
+                <h3>
+                    Where would you like your tickets?
+                </h3>
+                <section class="booking-radio-section">
+                    <div class="booking-radio">
+                        <input type="radio" name="booking-radio" value="email-ticket" id="booking-radio-email">
+                        <label for="booking-radio-email" class="radio-label">E-mail:</label>
+
+                    </div>
+                    <div class="booking-radio">
+                        <input type="radio" name="booking-radio" value="text-message" id="booking-radio-text"/>
+                        <label for="booking-radio-text" class="radio-label">Text Message:</label>
+                    </div>
+                    <div class="booking-radio">
+                        <input type="radio" name="booking-radio" value="text-and-email" id="booking-radio-both"/>
+                        <label for="booking-radio-both" class="radio-label">Email and Text Message:</label>
+                    </div>
+                </section>
+                <hr/>
+                <div class="terms-section">
+                    <input type="checkbox" name="terms" value="terms-and-conditions" id="terms" required>
+                    <label for="terms">I have read and agree to the terms <br> and conditions.</label>
+                </div>
+                <button type="submit" class="submit-btn booking-submit-btn">
+                    Submit
+                </button>
+            </form>
+        </section>
+    </div>
 </main>
 <div class="sign-up-box">
     <h3 class="sign-up-headline">
         Sign up for news and early access!
     </h3>
-    <form>
+    <form class="sign-up-form">
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="E-mail address:" required>
         <button type="submit" class="submit-btn">
