@@ -90,6 +90,11 @@ h1 {
 
 .pink-button-a:hover {
     color: var(--cta);
+    background-color: green;
+}
+
+.pink-button-a:focus {
+    color: var(--cta);
 }
 
 
