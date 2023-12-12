@@ -1,0 +1,59 @@
+main {
+    height: 100%;
+    padding: 0 35px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.journal-banner {
+    background-image: url("../assets/mobile-images/science-journal-header-mobile.webp");
+    height: 360px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.journal-h1 {
+    color: var(--light);
+}
+
+.journal-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.journal-article img {
+    height: 100%;
+    width: 100%;
+}
+
+.article-box-outer {
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--stroke);
+    background-color: var(--card);
+}
+
+.article-box-inner {
+    height: 100%;
+    width: 100%;
+    background-color: var(--light);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+@media (min-width: 1280px) {
+    main {
+        padding: 0 70px;
+    }
+
+    .journal-article {
+        flex-direction: row;
+    }
+}
