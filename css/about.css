@@ -15,15 +15,33 @@ h1 {
     font-weight: 800;
 }
 
-.mobile-about-banner {
+.page-banner {
     height: 360px;
     width: 360px;
-    background-image: url("../assets/mobile-images/mobile-about-header-img.png");
+    background-image: url("../assets/mobile-images/mobile-about-header-img.webp");
     border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+}
+
+.banner-animation {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
 }
 
 .about-text-box-outer {
@@ -63,11 +81,11 @@ h1 {
         padding-right: 70px;
     }
 
-    .mobile-about-header {
+    .page-banner {
         height: 100vh;
         max-height: 868px;
         width: 50%;
-        background-image: url("../assets/desktop-images/desktop-about-img.png");
+        background-image: url("../assets/desktop-images/desktop-about-img.webp");
         margin-bottom: 0;
     }
 

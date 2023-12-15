@@ -33,7 +33,7 @@ main {
 
 .carousel {
     height: 392px;
-    width: 360px;
+    min-width: 360px;
     margin-bottom: 1rem;
 }
 
@@ -64,14 +64,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: .5rem;
 }
 
 .events-carousel-img {
     background-image: url("../assets/mobile-images/events-example-img.webp");
     background-repeat: no-repeat;
     height: 344px;
-    width: 328px;
-    margin: .5rem;
+    min-width: 328px;
     border-radius: .5rem;
     display: flex;
     align-items: flex-end;
@@ -101,8 +101,7 @@ main {
     background-image: url("../assets/mobile-images/exhibitions-example-img.webp");
     background-repeat: no-repeat;
     height: 344px;
-    width: 328px;
-    margin: .5rem;
+    min-width: 328px;
     border-radius: .5rem;
     display: flex;
     align-items: flex-end;
@@ -132,26 +131,27 @@ main {
 
 
 .information {
-    background-image: url("../assets/mobile-images/practical-info-img-mobile.webp");
+    background-image: url("../assets/desktop-images/desktop-home-practical.png");
+    background-repeat: no-repeat;
 }
 
 .about {
-    background-image: url("../assets/mobile-images/about-us.webp");
+    background-image: url("../assets/desktop-images/desktop-home-about.png");
     background-repeat: no-repeat;
 }
 
 .contact {
-    background-image: url("../assets/mobile-images/contact-support-img.webp");
+    background-image: url("../assets/desktop-images/desktop-contact-ex.png");
     background-repeat: no-repeat;
 }
 
 .article-1 {
-    background-image: url("../assets/mobile-images/mammoth-artice-mobile.webp");
+    background-image: url("../assets/desktop-images/desktop-home-mammoth.png");
     background-repeat: no-repeat;
 }
 
 .article-2 {
-    background-image: url("../assets/mobile-images/fossils-article-mobile.webp");
+    background-image: url("../assets/desktop-images/desktop-home-fossils.png");
     background-repeat: no-repeat;
 }
 
@@ -172,15 +172,15 @@ main {
     .events-carousel-img {
         background-image: url("../assets/desktop-images/desktop-events-home-img.png");
         background-repeat: no-repeat;
-        height: 344px;
-        width: 618px;
+        height: 100%;
+        width: 100%;
     }
 
     .exhibit-carousel-img {
         background-image: url("../assets/desktop-images/desktop-exhibitions-exp.png");
         background-repeat: no-repeat;
-        height: 344px;
-        width: 618px;
+        height: 100%;
+        width: 100%;
     }
 
     .home-banner {
@@ -211,7 +211,7 @@ main {
 
 @media (min-width: 1280px) {
     .hero-banner {
-        background-image: url("../assets/desktop-images/desktop-hero-img.png");
+        background-image: url("../assets/desktop-images/desktop-hero-img.webp");
         background-repeat: no-repeat;
         height: 448px;
         width: 1300px;

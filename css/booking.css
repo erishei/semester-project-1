@@ -4,7 +4,7 @@ h1 {
     font-weight: 800;
 }
 
-.mobile-info-header {
+.page-banner {
     height: 360px;
     width: 360px;
     background-image: url("../assets/mobile-images/mobile-booking-header.webp");
@@ -15,6 +15,24 @@ h1 {
     margin: 2rem 0;
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+}
+
+.banner-animation {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -22,22 +40,6 @@ main {
     align-items: center;
     padding-left: 35px;
     padding-right: 35px;
-}
-
-.hours-list-box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.hours-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.day {
-    font-weight: 700;
-    font-size: 1rem;
 }
 
 .ticket-pricing-outer {
@@ -175,5 +177,12 @@ form h3 {
 
     .desktop-main-part-2 {
         padding-top: 2rem;
+    }
+
+    .info-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
     }
 }
