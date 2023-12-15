@@ -5,7 +5,7 @@ main {
     padding-left: 35px;
 }
 
-.exhibitions-banner {
+.page-banner {
     background-image: url("../assets/mobile-images/exhibitions-header.webp");
     height: 360px;
     width: 360px;
@@ -14,6 +14,24 @@ main {
     justify-content: center;
     border-radius: .5rem;
     margin-bottom: 2rem;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(-20px);
+    }
+}
+
+.banner-animation {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
 }
 
 h1 {

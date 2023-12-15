@@ -14,7 +14,7 @@ h1 {
     font-weight: 800;
 }
 
-.mobile-info-header {
+.page-banner {
     height: 360px;
     width: 360px;
     background-image: url("../assets/mobile-images/practical-info-img-mobile.webp");
@@ -55,6 +55,11 @@ h1 {
 
 .location h3 {
     padding-bottom: 1rem;
+}
+
+.info-paragraph {
+    line-height: 2rem;
+    margin-bottom: 3rem;
 }
 
 .mobile-map {
@@ -126,10 +131,16 @@ h1 {
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
     main {
         max-width: 1440px;
     }
+    .mobile-info-header {
+        height: 374px;
+        width: 1300px;
+        background-image: url("../assets/desktop-images/information-desktop-banner.webp");
+    }
 }
+
 
 

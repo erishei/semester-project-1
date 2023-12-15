@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This will be my meta-description for the home page">
+    <meta name="description" content="Explore the fascinating world of science with your family at our museum, designed for pre-teens, adults, and families with small children.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -69,13 +69,39 @@
             </li>
         </ul>
         <div class="nav-right">
-            <a class="burger-menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                    <rect y="9.59998" width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                    <rect y="19.2" width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                </svg>
-            </a>
+            <button id="burger-menu">
+                <img id="burger-open" src="assets/mobile-svgs/burger-icon.svg">
+                <img id="burger-close" src="assets/mobile-svgs/burger-x-icon.svg">
+            </button>
+            <div id="burger">
+                <ul class="burger-list">
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exhibitions.html">
+                            Exhibits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="booking.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="journal.html">
+                            Journal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <a class="language-selector">
                 <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,7 +126,7 @@
 </section>
 
 <main>
-    <section class="carousel">
+    <section class="info-box carousel">
         <div class="carousel-headline">
             <h2>
                 Events
@@ -125,7 +151,7 @@
         <div class="carousel-main">
             <div class="exhibit-carousel-img">
                 <div class="carousel-a">
-                    <a href="exhibits.html">
+                    <a href="exhibitions.html">
                         See more
                     </a>
                 </div>
@@ -251,6 +277,8 @@
         </p>
     </div>
 </footer>
+
+<script src="main.js"></script>
 
 </body>
 </html>

@@ -69,13 +69,39 @@
             </li>
         </ul>
         <div class="nav-right">
-            <a class="burger-menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                    <rect y="9.59998" width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                    <rect y="19.2" width="24" height="4.8" rx="2.4" fill="#9747FF"/>
-                </svg>
-            </a>
+            <button id="burger-menu">
+                <img id="burger-open" src="assets/mobile-svgs/burger-icon.svg">
+                <img id="burger-close" src="assets/mobile-svgs/burger-x-icon.svg">
+            </button>
+            <div id="burger">
+                <ul class="burger-list">
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exhibitions.html">
+                            Exhibits
+                        </a>
+                    </li>
+                    <li>
+                        <a href="booking.html">
+                            Tickets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="journal.html">
+                            Journal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <a class="language-selector">
                 <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -92,40 +118,94 @@
         </div>
     </nav>
 </header>
-<section class="journal-banner">
-    <h1 class="journal-h1">
-        The Science Journal
-    </h1>
-</section>
 <main>
+    <div class="banner-padding">
+        <section class="page-banner">
+            <picture>
+                <source media="(min-width:650px)"
+                        srcset="assets/desktop-images/desktop-banners/desktop-journal-banner.webp">
+                <img class="banner-img" src="assets/tablet-images/tablet-journal-banner.png" alt="."
+                >
+            </picture>
+            <div class="banner-animation">
+                <h1 class="journal-h1">
+                    The Science Journal
+                </h1>
+            </div>
+        </section>
+    </div>
     <section class="journal-article first-ja">
         <div class="journal-article-img-box">
-            <img src="assets/desktop-images/mammoth-article-img.png"/>
+            <img src="assets/desktop-images/mammoth-article-img.webp"/>
         </div>
-        <h2 class="journal-h2">
-            Mammoths: Giants of the Ice Age
-        </h2>
-        <div class="article-box-outer">
-            <div class="article-box-inner">
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, reiciendis, tempora. Amet culpa, deserunt dicta, dignissimos dolor est et hic itaque libero nesciunt nostrum placeat quia repellat repellendus unde vel.
-                </article>
+        <div class="journal-article-box">
+            <h2 class="journal-h2">
+                Mammoths: Giants of the Ice Age
+            </h2>
+            <div class="article-box-outer">
+                <div class="article-box-inner">
+                    <article>
+                        <p>
+                            Mammoths, the towering giants of the Ice Age, are a fascinating part of Earth's history. These magnificent creatures roamed the Earth thousands of years ago and left behind a legacy that continues to captivate our imagination.
+                        </p>
+                        <p>
+                            Standing up to 13 feet tall and weighing several tons, mammoths were well-adapted to survive in the harsh environments of the Ice Age. With their long, curved tusks and thick, shaggy fur, they navigated through snowy landscapes and endured freezing temperatures.
+                        </p>
+                        <p>
+                            But what makes mammoths truly remarkable are the incredible discoveries that scientists have made. Thanks to the frozen tundras of Siberia, we have been able to uncover preserved mammoth remains, including bones, tusks, and even intact carcasses. These invaluable findings have provided us with valuable insights into the lives of these ancient giants.
+                        </p>
+                        <p>
+                            Studying mammoths has allowed scientists to unlock secrets about their biology, behavior, and their interactions with their environment. By analyzing their DNA, researchers have made groundbreaking discoveries, including the possibility of one day bringing mammoths back to life through genetic engineering.
+                        </p>
+                        <p>
+                            At the Science Museum, we are proud to showcase the wonders of mammoths through our interactive exhibits and educational workshops. Step into the world of the Ice Age and learn about the life of mammoths, their adaptations, and their significance in Earth's history.
+                        </p>
+                        <p>
+                            Join us on this incredible journey as we explore the fascinating world of mammoths and uncover the mysteries of these magnificent creatures.
+                        </p>
+                        <p class="bottom-p">
+                            Visit the Science Museum today and embark on an adventure through time to discover the giants of the Ice Age!
+                        </p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
     <section class="journal-article second-ja">
-        <h2 class="journal-h2">
-            Unveiling the Secrets of Fossils
-        </h2>
-        <div class="article-box-outer">
-            <div class="article-box-inner">
-                <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, reiciendis, tempora. Amet culpa, deserunt dicta, dignissimos dolor est et hic itaque libero nesciunt nostrum placeat quia repellat repellendus unde vel.
-                </article>
+        <div class="journal-article-box">
+            <h2 class="journal-h2">
+                Unveiling the Secrets of Fossils
+            </h2>
+            <div class="article-box-outer">
+                <div class="article-box-inner">
+                    <article>
+                        <p>
+                            Fossils hold a remarkable story of ancient life on Earth, offering us a glimpse into the distant past. At our Science Museum, we celebrate the wonders of fossils and their importance in unraveling the mysteries of our planet's history.
+                        </p>
+                        <p>
+                            A fossil is the preserved remains or traces of a once-living organism. From the hardened bones of dinosaurs to the delicate imprints of ancient leaves, fossils provide a tangible connection to life forms that existed long before our time. They serve as windows into prehistoric ecosystems and allow us to reconstruct the incredible diversity of past life.
+                        </p>
+                        <p>
+                            Through careful excavation and meticulous study, paleontologists unlock the secrets held within fossils. By examining fossilized bones, teeth, and shells, scientists can piece together the anatomy and behavior of extinct creatures. They can also analyze fossilized pollen, spores, and plant fragments to reconstruct ancient environments and understand the evolution of plant life.
+                        </p>
+                        <p>
+                            Fossils also offer a unique window into evolutionary processes. By comparing fossils from different time periods, scientists can track the gradual changes in species over millions of years. These insights help us comprehend the intricate web of life and the mechanisms that shape biodiversity.
+                        </p>
+                        <p>
+                            At our Science Museum, we proudly showcase a collection of extraordinary fossils. Step into our exhibit halls and marvel at the ancient skeletons of colossal dinosaurs, the beautifully preserved marine creatures of bygone eras, and the intricate imprints of long-extinct plants. Immerse yourself in the captivating world of fossils and witness firsthand the wonders of deep time.
+                        </p>
+                        <p>
+                            Join us on a journey of discovery as we uncover the secrets hidden within fossils. Explore the past, unravel the mysteries, and gain a deeper understanding of the incredible story of life on Earth.
+                        </p>
+                        <p class="bottom-p">
+                            Visit the Science Museum today and embark on an unforgettable adventure into the realm of fossils!
+                        </p>
+                    </article>
+                </div>
             </div>
         </div>
         <div class="journal-article-img-box">
-            <img src="assets/desktop-images/fossils-article-img.png"/>
+            <img src="assets/desktop-images/fossils-article-img.webp"/>
         </div>
     </section>
 </main>
@@ -220,5 +300,6 @@
         </p>
     </div>
 </footer>
+<script src="main.js"></script>
 </body>
 </html>
