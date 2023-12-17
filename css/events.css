@@ -1,17 +1,48 @@
 main {
-    padding-left: 35px;
-    padding-right: 35px;
+    height: 100%;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 35px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.banner-padding {
+    width: 100%;
+    max-width: 1300px;
+    height: 374px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .page-banner {
-    height: 360px;
-    width: 360px;
-    background-color: var(--light);
-    border-radius: .5rem;
-    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+picture {
+    height: 374px;
+}
+
+.banner-img {
+    border-radius: .5rem;
 }
 
 @keyframes bounce {
@@ -30,6 +61,7 @@ main {
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: 2;
+    position: absolute;
 }
 
 .events-box-inner {

@@ -35,7 +35,6 @@ picture {
 
 .banner-img {
     border-radius: .5rem;
-
 }
 
 @keyframes bounce {
@@ -51,6 +50,9 @@ picture {
 }
 
 .banner-animation {
+    box-shadow: inset 0 0 0 1000px rgba(4, 25, 56, 75%);
+    border-radius: .5rem;
+    padding: 1rem;
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: 2;
