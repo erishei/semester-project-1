@@ -65,10 +65,6 @@ nav {
     text-decoration: none;
 }
 
-.active {
-    color: var(--cta);
-}
-
 .burger-list a:hover {
     color: var(--cta);
 }
@@ -102,6 +98,10 @@ nav {
     font-weight: 700;
     font-size: 1rem;
     color: var(--light);
+}
+
+.active {
+    color: var(--cta)!important;
 }
 
 .nav-list a:hover {
@@ -307,7 +307,7 @@ footer {
     }
 
     .footer-links a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .footer-text {

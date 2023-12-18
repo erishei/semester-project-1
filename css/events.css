@@ -10,8 +10,7 @@ main {
     justify-content: center;
 }
 
-
-h1 {
+.events-h1 {
     color: var(--light);
     font-size: 1.5rem;
     font-weight: 800;
@@ -37,12 +36,30 @@ h1 {
     width: 100%;
 }
 
+.banner-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.banner-shadow {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--blur);
+}
+
 picture {
     height: 374px;
 }
 
 .banner-img {
     border-radius: .5rem;
+    height: 100%;
 }
 
 @keyframes bounce {
@@ -76,8 +93,24 @@ picture {
     margin-bottom: 1rem;
 }
 
-img {
+.info-boxes img {
     width: 100%;
+}
+
+@media (min-width: 650px) {
+    .banner-shadow {
+        display: flex;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    picture {
+        height: 374px;
+    }
 }
 
 @media (min-width: 1280px) {

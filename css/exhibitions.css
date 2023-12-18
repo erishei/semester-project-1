@@ -30,6 +30,23 @@ main {
     width: 100%;
 }
 
+.banner-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.banner-shadow {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--blur);
+}
+
 picture {
     height: 374px;
 }
@@ -57,7 +74,7 @@ picture {
     position: absolute;
 }
 
-h1 {
+.exhibits-h1 {
     color: var(--light);
     font-weight: 800;
     font-size: 1.5rem;
@@ -112,6 +129,16 @@ h1 {
 
 #exhibit-bottom-p {
     font-size: 1.5rem;
+}
+
+@media (min-width: 650px) {
+    .banner-shadow {
+        display: flex;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 868px) {

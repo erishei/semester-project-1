@@ -131,7 +131,7 @@ main {
 
 
 .information {
-    background-image: url("../assets/desktop-images/desktop-home-practical.png");
+    background-image: url("../assets/mobile-images/practical-info-img-mobile.webp");
     background-repeat: no-repeat;
 }
 
@@ -141,7 +141,7 @@ main {
 }
 
 .contact {
-    background-image: url("../assets/desktop-images/desktop-contact-ex.png");
+    background-image: url("../assets/desktop-images/desktop-contact-ex.webp");
     background-repeat: no-repeat;
 }
 
@@ -197,7 +197,7 @@ main {
     }
 
     .contact {
-        background-image: url("../assets/desktop-images/desktop-contact-ex.png");
+        background-image: url("../assets/desktop-images/desktop-contact-img.webp");
     }
 
     .article-1 {
