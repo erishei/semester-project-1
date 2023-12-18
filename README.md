@@ -5,7 +5,7 @@ This is my first year semester project, the Science Museum.
 ## Contents:
 - [About](#About)
 - [Requirements](#Requirements)
-- [Technologies used](#Technologies)
+- [Technologies used](#Technologies-used)
 - [Other Tools](#Other)
 - [Features](#Features)
 - [Process](#Process)
@@ -30,7 +30,7 @@ to these two juxtaposing target audiences without being very obvious or cliché.
 9. The site should show consideration for content strategy and SEO (consider your use of
    meta tags and alt text).
 
-## Technologies used:  
+## Technologies-used:  
 - HTML
 - CSS
 - JavaScript
