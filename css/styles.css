@@ -108,8 +108,8 @@ main {
 }
 
 .home-banner {
-    height: 360px;
-    width: 360px;
+    min-height: 360px;
+    min-width: 360px;
     border-radius: .5rem;
     margin-bottom: 1rem;
     display: flex;
@@ -119,10 +119,15 @@ main {
 }
 
 .home-banner a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--light);
     font-weight: 700;
     font-size: 1.5rem;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
 
 .home-banner a:hover {
@@ -185,7 +190,7 @@ main {
 
     .home-banner {
         height: 374px;
-        width: 634px;
+        width: 615px;
     }
 
     .about {
