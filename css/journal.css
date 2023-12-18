@@ -33,6 +33,16 @@ picture {
     height: 374px;
 }
 
+.banner-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--blur);
+}
+
 .banner-img {
     border-radius: .5rem;
 }
@@ -50,7 +60,6 @@ picture {
 }
 
 .banner-animation {
-    box-shadow: inset 0 0 0 1000px rgba(4, 25, 56, 75%);
     border-radius: .5rem;
     padding: 1rem;
     animation-name: bounce;

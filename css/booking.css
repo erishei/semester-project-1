@@ -10,7 +10,7 @@ main {
     justify-content: center;
 }
 
-h1 {
+.booking-h1 {
     color: var(--light);
     font-size: 1.5rem;
     font-weight: 800;
@@ -34,6 +34,23 @@ h1 {
     justify-content: center;
     border-radius: .5rem;
     width: 100%;
+}
+
+.banner-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.banner-shadow {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--blur);
 }
 
 picture {
@@ -186,6 +203,16 @@ form h3 {
 
 .booking-submit-btn {
     margin-bottom: .5rem;
+}
+
+@media (min-width: 650px) {
+    .banner-shadow {
+        display: flex;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 1280px) {
