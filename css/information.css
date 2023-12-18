@@ -146,14 +146,14 @@ picture {
     background: none;
     width: 100%;
     height: 100%;
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .pink-button-a:hover {
-    color: var(--cta);
-    background-color: green;
+    background-color: var(--linkgreen);
 }
 
 .pink-button-a:focus {
