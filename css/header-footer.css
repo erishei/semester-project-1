@@ -184,6 +184,10 @@ nav {
     cursor: pointer;
 }
 
+.submit-btn:hover, .submit-btn:focus {
+   background-color: var(--linkpink);
+}
+
 footer {
     width: 100%;
     display: flex;
