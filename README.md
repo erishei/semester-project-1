@@ -97,3 +97,5 @@ challenging and fun to code.
 
 There is definitely room for improvements in certain areas. But all in all I feel much more confident in  
 this project vs. the first one. 
+
+[Link to the site on Netlify](https://famous-licorice-8ef4d4.netlify.app)
